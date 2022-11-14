@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature converter</title>
+    <link rel="stylesheet" href="TEMPERATURE CONVERTER.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="top">
+          <div class="nav">
+            <p class="date"></p>
+            <ion-icon name="person" class="user"></ion-icon>
+          </div>
+          <ion-icon name="partly-sunny"></ion-icon>
+          <select id="unit-converter">
+            <option>Temperature</option>
+            <option>Currency</option>
+            <option>Length</option>
+          </select>
+          <div class="primary">
+            <input type="number" id="main-unit" />
+            <select class="main-unit-options reset">
+              <option>Celsius</option>
+              <option>Kelvin</option>
+              <option>Fahrenheit</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <div class="secondary">
+            <input type="number" id="second-unit" />
+            <select class="second-unit-options reset">
+              <option>Kelvin</option>
+              <option>Fahrenheit</option>
+              <option>Celsius</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="TEMPERATURE CONVERTER.js"></script>
+  </body>
+</html>
